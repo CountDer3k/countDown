@@ -1,7 +1,7 @@
 # CountDown
 Terminal based Countdown written in python
 
-<img src="Example.png" alt="Terminal screenshot of countdown" width="200"/>
+<img src="Example.png" alt="Terminal screenshot of countdown" width="400"/>
 
 ## Dependencies
 
