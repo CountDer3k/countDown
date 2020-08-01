@@ -86,7 +86,7 @@ def countDown(hours, minutes, seconds):
 		mins, secs = divmod(t, MINUTES_IN_HOUR)
 		hour, mins = divmod(mins, MINUTES_IN_HOUR)
 		timeLeft = '{:02d}:{:02d}:{:02d}'.format(hour, mins, secs)
-		print(ALARM_CLOCK + ' Timer is set for: ' + str(totalTime) + ' minutes ' + ALARM_CLOCK)
+		print(ALARM_CLOCK + ' Timer is set for: %d Hours %d: Minuts %d Seconds' % (hours,minutes,seconds) + ' ' + ALARM_CLOCK)
 		print(timeLeft, end='\n')
 		time.sleep(1)
 		t -= 1
