@@ -11,6 +11,6 @@ Terminal based Countdown written in python
 ## Features
 
 - [X] Count down threshold to 60mins
-- [ ] Count down threshold to 24hrs
-- [ ] Count down threshold support only seconds
+- [X] Count down threshold to 24hrs
+- [X] Count down threshold support only seconds
 - [ ] Maybe give this a GUI??
