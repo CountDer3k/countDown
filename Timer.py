@@ -3,18 +3,58 @@ import os
 import emoji
 
 ALARM_CLOCK = emoji.emojize(':alarm_clock:')
+ALARM_CLOCK_2 = ALARM_CLOCK + ALARM_CLOCK
+ALARM_CLOCK_3 = ALARM_CLOCK + ALARM_CLOCK + ALARM_CLOCK
+ALARM_CLOCK_8 = ALARM_CLOCK_2 + ALARM_CLOCK_2 + ALARM_CLOCK_2 + ALARM_CLOCK
+TAB_10 = '\t\t'
+TAB_12 = TAB_10 + TAB_10
 MINUTES_IN_HOUR = 60
 
 def intput():
 	return int(input())
 
-def finishedCountDown():
+def countDown_finished():
 	os.system('clear')
-	for i in range(50):
-		output = ALARM_CLOCK
-		for j in range(15):
-			output += '     ' + ALARM_CLOCK
-		print(output)
+	print('                                                               ')
+	print('    ###########   ##########     ###  ###     ######   ######  ')
+	print('         ##           ##        ##  ##  ##    ##       ##      ')
+	print('         ##           ##       ##   ##   ##   ##       ##      ')
+	print('         ##           ##       ##   ##   ##   ####     ######  ')
+	print('         ##           ##       ##   ##   ##   ##           ##  ')
+	print('         ##       ##########   ##   ##   ##   ######   ######  ')
+	print('                                                               ')
+	print('                                                               ')
+	print('                ##       ##   ########    ##   ##   ##         ')
+	print('                ##       ##   ##     ##   ##   ##   ##         ')
+	print('                ##       ##   ##    ##    ##   ##   ##         ')
+	print('                ##       ##   #######     ##   ##   ##         ')
+	print('                ##       ##   ##          ##   ##   ##         ')
+	print('                 ##     ##    ##                               ')
+	print('                  #######     ##          ##   ##   ##         ')
+	print('                                                               \n\n\n')
+	clockEmoji()
+
+def clockEmoji():
+	print(TAB_10 + '         ' + ALARM_CLOCK_8 + '       ')
+	print(TAB_10 + '     ' + ALARM_CLOCK_2 + '             ' + ALARM_CLOCK_2 + '     ')
+	print(TAB_10 + '  ' + ALARM_CLOCK_2 + '                    ' + ALARM_CLOCK_2 + '  ')
+
+	print(TAB_10 + ALARM_CLOCK_2 + '                        ' + ALARM_CLOCK_2)
+	print(TAB_10 + ALARM_CLOCK + '             ' + ALARM_CLOCK + '             ' + ALARM_CLOCK)
+	print(TAB_10 + ALARM_CLOCK + '             ' + ALARM_CLOCK + '             ' + ALARM_CLOCK)
+	print(TAB_10 + ALARM_CLOCK + '             ' + ALARM_CLOCK + '    ' + ALARM_CLOCK + '       ' + ALARM_CLOCK)
+	print(TAB_10 + ALARM_CLOCK + '             ' + ALARM_CLOCK + '  ' + ALARM_CLOCK + '         ' + ALARM_CLOCK)
+	print(TAB_10 + ALARM_CLOCK + '             ' + ALARM_CLOCK_2 + '           ' + ALARM_CLOCK)
+	print(TAB_10 + ALARM_CLOCK + '                            ' + ALARM_CLOCK)
+	print(TAB_10 + ALARM_CLOCK + '                            ' + ALARM_CLOCK)
+	print(TAB_10 + ALARM_CLOCK_2 + '                        ' + ALARM_CLOCK_2)
+	
+	print(TAB_10 + '  ' + ALARM_CLOCK_2 + '                    ' + ALARM_CLOCK_2 + '  ')
+	print(TAB_10 + '     ' + ALARM_CLOCK_2 + '              ' + ALARM_CLOCK_2 + '     ')
+	print(TAB_10 + '         ' + ALARM_CLOCK_8 + '       \n\n')
+
+
+
 
 
 def countDown(t):
@@ -28,7 +68,8 @@ def countDown(t):
 		print(timeLeft, end='\n')
 		time.sleep(1)
 		t -= 1
-	finishedCountDown()
+	countDown_finished()
+
 
 print('Input time (in minutes): ')
 inputTime = intput()
