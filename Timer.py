@@ -70,6 +70,8 @@ def intput(x):
 	if(len(x) == 2):
 		# Minutes only
 		m = int(x[0] + x[1])
+	if(len(x) == 1):
+		m = int(x[0])
 	timeList.append(h)
 	timeList.append(m)
 	timeList.append(s)
@@ -96,7 +98,8 @@ def showHelp():
 	print('Separated time with \'.\' between hours, minutes & seconds')
 	print('Example for 1 hour 10 minutes with 45 seconds: 01.10.45')
 	print('For second only do: .XX ')
-	print('For minutes only do: XX')
+	print('For minutes only do: XX or X as input')
+	print('X is any positive number')
 	print('Requires 2 digits per area.')
 	print('\n########################################################')
 	prepareInput()
@@ -122,6 +125,8 @@ def main():
 	print('\n########################################################')
 	print('Insturctions:')
 	print('Enter time separated by \'.\' between hours, minutes & seconds')
+	print('For minutes only do: XX or X as input')
+	print('X is any positive number')
 	print('type \'help\' for more info')
 	print('########################################################')
 	prepareInput()
