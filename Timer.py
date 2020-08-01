@@ -113,12 +113,12 @@ def prepareInput():
 		hours = intput(inputTime)[0]
 		minutes = intput(inputTime)[1]
 		seconds = intput(inputTime)[2]
-		while(minutes > 60 or seconds > 60):
-			print('Minutes and seconds must be less than 60 each \n Input time: ')
-			time = input()
-			hours = intput(inputTime)[0]
-			minutes = intput(inputTime)[1]
-			seconds = intput(inputTime)[2]
+		while(hours > 24 or minutes > 60 or seconds > 60):
+				print('\nHours, minutes, or seconds are too high \nMinutes and seconds must be less than 60 \nHours must be less than 24 \n\nInput time: ')
+				inputTime = input()
+				hours = intput(inputTime)[0]
+				minutes = intput(inputTime)[1]
+				seconds = intput(inputTime)[2]
 		countDown(hours, minutes, seconds)
 
 def main():
