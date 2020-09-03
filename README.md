@@ -10,7 +10,7 @@ Time format is as follows:
 | Format | Explanation |
 |--------|-------------|
 | HH.MM.SS | Set hours,minutes and seconds |
-| MM.SS.   | Sets minutes and seconsd |
+| MM.SS   | Sets minutes and seconds |
 | .SS      | Sets only seconds |
 | MM       | Sets only minutes |
 | M        | Sets only minute |
